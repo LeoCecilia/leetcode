@@ -22,3 +22,14 @@ var singleNumber = function(nums) {
     }
 };
 ```
+
+然后我发现了一个另一个更加简洁的方法
+``` javascript
+var singleNumber = function(arr) {
+    var elem = 0;
+    for (var i = 0, len = arr.length; i < len; i++) {
+        elem = elem ^ arr[i];
+    }
+    return elem;
+};
+```
