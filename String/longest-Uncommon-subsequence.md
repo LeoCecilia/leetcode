@@ -17,7 +17,6 @@ The length of the given list will be in the range of [2, 50].
   - subsequence - a是b的subsequence的意思是，a中的元素可从b中的元素删除0个及以上的元素而获得，此乃子集
 因此判断a是否是b的子集，只需要先判断a的长度是否比b的大，然后对b进行遍历，只有a[k] === b[i]时，k才自加，若k === a.length，则确认是子集。
 关于时间复杂度的问题，因为涉及到相互比较各元素是否是对方的元素的子集，因此其时间复杂度为n(n^2)
-
 ## 代码实现
 ``` javascript
 var findLUSlength = function(strs) {
